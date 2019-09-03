@@ -52,7 +52,7 @@ public class A2Novice {
 	public static int GetHighest(Double[] a, Double[] b, int c) {
 		
 		int index = 0;
-		double highest = 0;
+		
 		Double[] Ratios = new Double[c];
 		
 		for(int i = 0; i < c; i++) {
@@ -61,9 +61,11 @@ public class A2Novice {
 			
 		}
 		
+		double highest = Ratios[0];
+		
 		for(int i = 0; i < c; i++) {
 			
-			if(highest>Ratios[i]) {
+			if(highest<Ratios[i]) {
 				
 				highest = Ratios[i];
 				index = i;
