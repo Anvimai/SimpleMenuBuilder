@@ -118,7 +118,7 @@ int NumIngredients = 0;
 			
 			}
 		
-	
+	System.out.println("The order will require: ");
 	for(int i = 0; i < NumIngredients; i++) {
 		
 		System.out.printf("%.2f", ingredientOunces[i] );
