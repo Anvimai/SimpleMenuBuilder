@@ -1,30 +1,11 @@
-# Getting Warmer
-
-Like Assignment 1, this assignment is intended to further warm-up your basic programming skills and can be done without any object-oriented programming using built-in data types and arrays with loops and conditional execution.
 
 ## A2Novice
 
 This program reads in a list of ingredients used by a restaurant and prints out information derived from the list.
 
-The first input to the program will be an integer number that indicates the number of ingredients. Following this, for each ingredient will be a line with the form:
-
-```
-Ingredient_Name Price_Per_Ounce Is_Vegetarian Calories_Per_Ounce
-```
-
 Ingredient_Name is a single word token naming the ingredient. Price_Per_Ounce will be a real value indicating the cost of the ingredient in dollars per ounce. Is_Vegetarian will be the token "true" or "false" indicating whether the ingredient is vegetarian. Calories_Per_Ounce will be an integer indicating the caloric content of the ingredient per ounce.
 
 The program should count the number of vegetarian ingredients and report which ingredients provide the highest and lowest ratios of calories per dollar.
-
-The output should be formatted as follows:
-
-```
-Number of vegetarian ingredients: <NumberOfVegetarianIngredients>
-Highest cals/$: <IngredientWithHighestRatio>
-Lowest cals/$: <IngredientWithLowestRatio>
-```
-
-where the angle bracketed items are placeholders for the actual answers.
 
 For example, the following input:
 
@@ -55,29 +36,6 @@ The input to this program starts with the ingredient list in the same form as fo
 Each menu item recipe will start with a single word token name for the menu item. Following the name will be an integer indicating how many ingredients are in the recipe. Then there will be a line for each ingredient with the ingredient name followed by the number of ounces of this ingredient required for the menu item.
 
 For each menu item, the program should produce output describing the number of calories in the menu item, the total cost of the ingredients used, and an indication whether that menu item is "Vegetarian" or "Non-Vegetarian". A menu item is vegetarian if all of its component ingredients are vegetarian.
-
-The output for each menu item should be formatted as follows (again, bracketed items are placeholders for values to be determined by the program):
-
-```
-<Menu_Item_Name>:
-  <CalorieCount> calories
-  $<Cost>
-  <"Vegetarian" or "Non-Vegetarian">
-```
-
-CalorieCount should be rounded to the nearest integer. Cost should be rounded to two decimal places. 
-
-To round a double to the nearest integer as an int, use the following expression (assume dval is the value that needs to be rounded):
-
-```
- ((int) (dval + 0.5))
- ```
- 
-To print a double to two decimal places, use the following expression to produce the appropriate string:
-
-```
-String.format("%.2f", value)
-```
 
 For example, the following input:
 
@@ -141,18 +99,7 @@ This program reads in a list of ingredients and menu item recipes as specified f
 
 The first part of the input is the same as A2 Adept. This is followed by a sequence of menu item names that are part of the order. An item can appear more than once or not at all. There will be at least one item. The end of the order will be signalled by the word "EndOrder"
 
-The program should produce an accounting for the total amount of each ingredient required for the order. The ingredients should be listed in the same order as they were provided in the initial ingredient list input and have the following format:
-
-```
-The order will require:
-<Ingredient1TotalAmount> ounces of <Ingredient1>
-<Ingredient2TotalAmount> ounces of <Ingredient2>
-<Ingredient3TotalAmount> ounces of <Ingredient3>
-...
-<IngredientNTotalAmount> ounces of <IngredientN>
-```
-
-Note, the "..." above simply indicates possible additional lines of the same form. Ingredient amounts should be printed rounded to two decimal points.
+The program should produce an accounting for the total amount of each ingredient required for the order. 
 
 For example the following input:
 
